@@ -116,3 +116,46 @@
   margin: 0.5rem 0; /* 8px */
   font-weight: 500;
 }
+/* Trusted Seller Section */
+.trusted-seller-section {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 13.125rem; /* 210px */
+  gap: 3.75rem; /* 60px */
+  align-items: center;
+}
+.trusted-seller-section h1 {
+  font-size: 3.125rem; /* 50px */
+  font-weight: 700;
+}
+.trusted-seller-section li {
+  font-size: 1.375rem; /* 22px */
+  font-weight: 400;
+  margin-bottom: 1rem; /* px */
+}
+.flower-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+@keyframes spinWithTranslate {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.trusted-badge {
+  position: absolute;
+  top: -6.25rem; /* -100px */
+  left: 100%;
+  width: 17.5rem; /* 280px */
+  height: 17.5rem; /* 280px */
+  animation: spinWithTranslate 5s linear infinite;
+  transform: translateX(-50%);
+}
+.flower-image {
+  display: block;
+  width: 33.75rem;
+}
