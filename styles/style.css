@@ -371,3 +371,276 @@ footer {
 .footer-social img:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 750px) {
+  /* Banner */
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .nav-item:not(:last-child) {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+
+  .banner p {
+    max-width: 100%;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  /* Flower Collection */
+  .flower-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flower-title h2 {
+    font-size: 1.5rem; /* 50px */
+  }
+  .flower-title p {
+    font-size: 0.875rem; /* 14px */
+    max-width: 100%;
+  }
+  .card img {
+    width: 200px;
+    height: 300px;
+  }
+  .btn {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #ffffff;
+    background-color: #e95a08;
+    padding: 0.75rem 3rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 200px; /* 270px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+    color: #e95a08;
+    border-color: #e95a08;
+    box-shadow: 0 8px 20px rgba(78, 71, 255, 0.15);
+  }
+  .card h5 {
+    font-size: 1rem; /* 14px */
+    margin: 0.5rem 0; /* 8px */
+    font-weight: 500;
+  }
+  .card h4 {
+    font-size: 1rem; /* 16px */
+    margin: 0.5rem 0; /* 8px */
+    font-weight: bold;
+  }
+  /* Trusted Seller */
+  .trusted-seller-section {
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+  .flower-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .flower-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .br-breaker {
+    display: none;
+  }
+  .trusted-seller-section h1 {
+    font-size: 1.5rem; /* 50px */
+    font-weight: 700;
+  }
+  .trusted-seller-section li {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+    margin-bottom: 0.5rem; /* 8px */
+  }
+  /* Latest Deals */
+  .latest-deal-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .deal-side {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .deal-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .deal-card img {
+    height: auto;
+  }
+
+  .deal-title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .deal-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .latest-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .latest-header p {
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+  /* Join Section */
+  .join-content h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+  }
+  .join-form input[type="email"] {
+    height: 3.125rem;
+    width: 13.625rem; /* 500px */
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    border: none;
+    outline: none;
+  }
+  .join-form .btn {
+    width: 6.4375rem; /* 160px */
+    height: 3.125rem;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+  }
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-brand p {
+    font-size: 1rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-links ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+}
+
+/* For Iphone 13 */
+@media (max-width: 390px) {
+  /* Flower Collection */
+  .flower-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .flower-title h2 {
+    font-size: 1.5rem; /* 24px approx */
+  }
+
+  .flower-title p {
+    font-size: 0.875rem; /* 14px */
+    max-width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    max-height: 270px;
+    object-fit: cover;
+  }
+
+  .btn {
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    color: #ffffff;
+    background-color: #e95a08;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+    color: #e95a08;
+    border-color: #e95a08;
+    box-shadow: 0 8px 20px rgba(78, 71, 255, 0.15);
+  }
+
+  .card h5 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+}
